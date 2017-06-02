@@ -1,0 +1,332 @@
+/* FONT */
+
+@font-face {font-family: "Motiva Sns W01 Lt";
+  src: url("font/fa4dc6e3b02dda9e2da79234e598b6ec.eot"); /* IE9*/
+  src: url("font/fa4dc6e3b02dda9e2da79234e598b6ec.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("font/fa4dc6e3b02dda9e2da79234e598b6ec.woff2") format("woff2"), /* chrome?firefox */
+  url("font/fa4dc6e3b02dda9e2da79234e598b6ec.woff") format("woff"), /* chrome?firefox */
+  url("font/fa4dc6e3b02dda9e2da79234e598b6ec.ttf") format("truetype"), /* chrome?firefox?opera?Safari, Android, iOS 4.2+*/
+  url("font/fa4dc6e3b02dda9e2da79234e598b6ec.svg#Motiva Sns W01 Lt") format("svg"); /* iOS 4.1- */
+}
+
+/* GENERAL */
+body{
+    background-color: #1b2838;
+    font-family: "MotivaSnsW01-Lt";
+    font-size: 10pt;
+    color: #b8b6b4;
+    margin: 0px;
+    padding-bottom: 25px;
+}
+
+#text{
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 25%;
+}
+
+p{
+    -webkit-margin-before: 0em;
+}
+
+h1{
+    color: #2f89bc;
+    font-size: 10pt;
+    font-weight: 100;
+    -webkit-margin-after: 0em;
+}
+
+em{
+    color: #fff;
+    font-style: normal;
+    font-weight: 900;
+}
+
+a{
+    color: #b8b6b4;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+}
+
+/* NAVIGATION BAR */
+nav{
+    height: 50px;
+    width: 100%;
+    padding: 10px 10%;
+    position: fixed;
+    z-index: 100;
+    background: #171a21;
+}
+
+nav a {
+    text-transform: uppercase;
+    float: left;
+    line-height: 50px;
+    margin-right: 20px;
+}
+
+#logo{
+    height: 50px;
+    width: 200px;
+    background-image: url(imgs/logo.png);
+    background-position:top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 80px;
+    
+}
+
+/* CONTAINER */
+#container{
+    width: 100%;
+    height: 100%;
+}
+
+/* HOMEPAGE */
+#homepage{
+    width: 100%;
+    height: 844px;
+    background-image: url(imgs/background_home.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#steam_machine{
+    height: 94px;
+    width: 208px;
+    margin-left: 40%;
+}
+
+#steam_machine img{
+    width: 100%;
+    height: 100%;
+    margin-top: 700px;
+}
+
+video{
+    width: 100%;
+}
+
+/* SPECS */
+#specs{
+    width: 100%;
+    height: 100%;
+    background-image: url(imgs/background_specs.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0px;
+}
+
+#keymap{
+    width: 70%;
+    height: 70%;
+    margin-left: 15%;
+}
+
+/* GALLERY */
+#front{
+    background-image: url(imgs/front.jpg);
+}
+
+#side1{
+    background-image: url(imgs/side1.jpg);
+}
+
+#side2{
+    background-image: url(imgs/side2.jpg);
+}
+
+#back{
+    background-image: url(imgs/back.jpg);
+} 
+
+#closeup{
+    background-image: url(imgs/closeup.jpg);
+} 
+
+#onhand{
+    background-image: url(imgs/onhand.jpg);
+} 
+
+#front, #side1, #side2, #back, #closeup, #onhand{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    float: left; 
+}
+
+#front, #side1, #side2, #back{
+    width: 25%;
+    margin-top: 70px;
+}
+
+#closeup, #onhand{
+    width: 50%;
+}
+
+/* LIGHTBOX*/
+.fancybox-opened .fancybox-skin{
+    -webkit-box-shadow:0px 0px 0px;
+    box-shadow:0px 0px 0px;
+}
+
+.fancybox-skin{
+    background-color: transparent;
+}
+
+/* BUY */
+#buy{
+    width: 100%;
+    padding-top: 100px;
+}
+
+label{
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #2f89bc;
+}
+
+input {
+    border: none;
+    background-color: rgba(200, 200, 255, 0.1);
+    color: #b8b6b4;
+}
+
+label, input{
+    padding: 5px 0px 5px 15px;
+    display: block;
+    margin-left: 30%;
+    width: 30%;
+}
+
+form p{
+    -webkit-margin-after: 0em;
+    text-align: center;
+}
+
+input[type=text], input[type=submit]{
+    font-family: "MotivaSnsW01-Lt";
+}
+
+input[value]{
+    width: 31%;
+    padding: 5px 0px;
+}
+
+/* RESPONSIVE */
+/* <1050px */
+@media only screen and (max-width : 1050px) {
+    
+    /* SPECS */
+    #keymap{
+        width: 90%;
+        height: 90%;
+        margin-left: 5%;
+    }
+    
+    #text{
+        width: 70%;
+        margin-left: 15%;
+    }
+    
+    /* GALLERY */
+    #front, #side1, #side2, #back{
+        width: 50%;
+        float: left;
+    }
+    
+    #front, #side1{
+        margin-top: 70px;
+    }
+    
+    #side2, #back{
+        margin-top: 0px;
+    }
+    
+    /* BUY */
+    label, input{
+    margin-left: 25%;
+    width: 50%;
+    }
+    
+    input[type=submit]{
+        width: 50%;
+    }
+
+}
+
+/* <625px */
+@media only screen and (max-width : 625px) {
+    
+    /* GENERAL */
+    #logo{
+        width: 100%;
+    }
+
+    nav{
+        text-align: center;
+        height: 100px;
+        padding: 10px 0px;
+    }
+    
+    nav a{
+        float: none;
+    }
+    
+    #text{
+        width: 70%;
+        margin-left: 15%;
+    }
+    
+    /* HOMEPAGE */
+    #steam_machine{
+        margin-left:35%;
+    }
+    
+    /* SPECS */
+    #specs #text{
+        margin-top: 100px;
+    }
+    
+    #keymap{
+        width: 100%;
+        height: 100%;
+        margin-left: 0px;
+    }
+    
+    /* GALLERY */
+    #front, #side1, #side2, #back, #closeup, #onhand{
+        width: 100%;
+        float: left;
+    }
+    
+    #front{
+        margin-top: 120px;
+    }
+    
+    #side1, #side2, #back{
+        margin-top: 0px;
+    }
+    
+    /* BUY */
+    #buy{
+        padding-top: 140px;
+    }
+    
+    label, input{
+        margin-left: 5%;
+        width: 90%;
+        padding: 5px 0px;
+    }
+    
+    input[type=submit]{
+        width: 90%;
+    }
+}
